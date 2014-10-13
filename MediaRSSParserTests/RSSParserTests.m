@@ -655,6 +655,8 @@ const char RSSParserFailBlockKey;
     [self verifyMediaRSS_Item2_Properties];
     [self verifyMediaRSS_Item2_Empty_MediaContent1];
     [self verifyMediaRSS_Item2_Minimum_Values_MediaContent2];
+    
+    [self verifyMediaRSS_Item2_UnsupportedProperties];
 }
 
 - (void)verifyMediaRSS_Item2_Properties
@@ -674,6 +676,13 @@ const char RSSParserFailBlockKey;
     assertThat(item2.mediaText, equalTo(@"Media Text 2"));
     
     assertThatInt(item2.mediaContents.count, equalToInt(2));
+}
+
+- (void)verifyMediaRSS_Item2_UnsupportedProperties
+{
+    RSSItem *item2 = testChannel.items[1];
+    
+    assertThat(item2.unsupportedElements[@"unsupportedElement"], equalTo(@"Media Item 2 Unsupported Element 1/1"));
 }
 
 - (void)verifyMediaRSS_Item2_Empty_MediaContent1
