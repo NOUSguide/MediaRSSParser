@@ -1,627 +1,1554 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		10D5053095B240E7B3A09D9D /* libPods-MediaRSSParserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9430DA407CEB4C96B2885102 /* libPods-MediaRSSParserTests.a */; };
-		444B3A3F193273E10038D9FF /* RSSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 444B3A3E193273E10038D9FF /* RSSChannel.m */; };
-		444B3A421932DEC90038D9FF /* RSSMediaThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 444B3A411932DEC90038D9FF /* RSSMediaThumbnail.m */; };
-		444B3A4A193325600038D9FF /* RSS_2_Example.xml in Resources */ = {isa = PBXBuildFile; fileRef = 444B3A49193325600038D9FF /* RSS_2_Example.xml */; };
-		444B3A4C19333EA70038D9FF /* Media_RSS_Example.xml in Resources */ = {isa = PBXBuildFile; fileRef = 444B3A4B19333EA70038D9FF /* Media_RSS_Example.xml */; };
-		44A30817192FEEAD00D65886 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A30816192FEEAD00D65886 /* NSString+HTML.m */; };
-		44A47EC8192E656C00B0B940 /* RSSParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A47EC7192E656C00B0B940 /* RSSParserTests.m */; };
-		44A47ECE192E65A900B0B940 /* Test_RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A47ECD192E65A900B0B940 /* Test_RSSParser.m */; };
-		44A47ED8192E970500B0B940 /* RSSParser+TestMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A47ED7192E970500B0B940 /* RSSParser+TestMethods.m */; };
-		44F4D6D2192ACC8900B1C78A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4D6D1192ACC8900B1C78A /* Foundation.framework */; };
-		44F4D6E0192ACC8900B1C78A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4D6DF192ACC8900B1C78A /* XCTest.framework */; };
-		44F4D6E1192ACC8900B1C78A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4D6D1192ACC8900B1C78A /* Foundation.framework */; };
-		44F4D6E3192ACC8900B1C78A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4D6E2192ACC8900B1C78A /* UIKit.framework */; };
-		44F4D6E6192ACC8900B1C78A /* libMediaRSSParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4D6CE192ACC8900B1C78A /* libMediaRSSParser.a */; };
-		44F4D6EC192ACC8900B1C78A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44F4D6EA192ACC8900B1C78A /* InfoPlist.strings */; };
-		44F4D706192ACCFB00B1C78A /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F4D6F8192ACCFB00B1C78A /* GTMNSString+HTML.m */; };
-		44F4D708192ACCFB00B1C78A /* RSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F4D6FF192ACCFB00B1C78A /* RSSItem.m */; };
-		44F4D709192ACCFB00B1C78A /* RSSMediaCredit.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F4D701192ACCFB00B1C78A /* RSSMediaCredit.m */; };
-		44F4D70A192ACCFB00B1C78A /* RSSMediaContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F4D703192ACCFB00B1C78A /* RSSMediaContent.m */; };
-		44F4D70B192ACCFB00B1C78A /* RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F4D705192ACCFB00B1C78A /* RSSParser.m */; };
-		4BFC5B3F1E6F447784BF55FC /* libPods-MediaRSSParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 891DE1AC37714A98A22A3026 /* libPods-MediaRSSParser.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		44F4D6E4192ACC8900B1C78A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 44F4D6C6192ACC8900B1C78A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 44F4D6CD192ACC8900B1C78A;
-			remoteInfo = MediaRSSParser;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		44F4D6CC192ACC8900B1C78A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		444B3A3D193273E10038D9FF /* RSSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSChannel.h; sourceTree = "<group>"; };
-		444B3A3E193273E10038D9FF /* RSSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSChannel.m; sourceTree = "<group>"; };
-		444B3A401932DEC90038D9FF /* RSSMediaThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSMediaThumbnail.h; sourceTree = "<group>"; };
-		444B3A411932DEC90038D9FF /* RSSMediaThumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSMediaThumbnail.m; sourceTree = "<group>"; };
-		444B3A49193325600038D9FF /* RSS_2_Example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = RSS_2_Example.xml; sourceTree = "<group>"; };
-		444B3A4B19333EA70038D9FF /* Media_RSS_Example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Media_RSS_Example.xml; sourceTree = "<group>"; };
-		44A30815192FEEAD00D65886 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
-		44A30816192FEEAD00D65886 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
-		44A47EC7192E656C00B0B940 /* RSSParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSParserTests.m; sourceTree = "<group>"; };
-		44A47ECC192E65A900B0B940 /* Test_RSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_RSSParser.h; sourceTree = "<group>"; };
-		44A47ECD192E65A900B0B940 /* Test_RSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_RSSParser.m; sourceTree = "<group>"; };
-		44A47ED6192E970500B0B940 /* RSSParser+TestMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSSParser+TestMethods.h"; sourceTree = "<group>"; };
-		44A47ED7192E970500B0B940 /* RSSParser+TestMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RSSParser+TestMethods.m"; sourceTree = "<group>"; };
-		44F4D6CE192ACC8900B1C78A /* libMediaRSSParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMediaRSSParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F4D6D1192ACC8900B1C78A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		44F4D6D5192ACC8900B1C78A /* MediaRSSParser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MediaRSSParser-Prefix.pch"; sourceTree = "<group>"; };
-		44F4D6DE192ACC8900B1C78A /* MediaRSSParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaRSSParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F4D6DF192ACC8900B1C78A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		44F4D6E2192ACC8900B1C78A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		44F4D6E9192ACC8900B1C78A /* MediaRSSParserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MediaRSSParserTests-Info.plist"; sourceTree = "<group>"; };
-		44F4D6EB192ACC8900B1C78A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		44F4D6F7192ACCFB00B1C78A /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		44F4D6F8192ACCFB00B1C78A /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
-		44F4D6F9192ACCFB00B1C78A /* MediaRSSModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaRSSModels.h; sourceTree = "<group>"; };
-		44F4D6FE192ACCFB00B1C78A /* RSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItem.h; sourceTree = "<group>"; };
-		44F4D6FF192ACCFB00B1C78A /* RSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItem.m; sourceTree = "<group>"; };
-		44F4D700192ACCFB00B1C78A /* RSSMediaCredit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSMediaCredit.h; sourceTree = "<group>"; };
-		44F4D701192ACCFB00B1C78A /* RSSMediaCredit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSMediaCredit.m; sourceTree = "<group>"; };
-		44F4D702192ACCFB00B1C78A /* RSSMediaContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSMediaContent.h; sourceTree = "<group>"; };
-		44F4D703192ACCFB00B1C78A /* RSSMediaContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSMediaContent.m; sourceTree = "<group>"; };
-		44F4D704192ACCFB00B1C78A /* RSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSParser.h; sourceTree = "<group>"; };
-		44F4D705192ACCFB00B1C78A /* RSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSParser.m; sourceTree = "<group>"; };
-		44F4D70F192ACD8600B1C78A /* MediaRSSParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaRSSParser.h; sourceTree = "<group>"; };
-		44F4D710192AD1E600B1C78A /* RSSParser_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSParser_Protected.h; sourceTree = "<group>"; };
-		4E946093F2214B3DB6111D31 /* Pods-MediaRSSParserTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRSSParserTests.xcconfig"; path = "Pods/Pods-MediaRSSParserTests.xcconfig"; sourceTree = "<group>"; };
-		616599D28F5F48E499D3F754 /* Pods-MediaRSSParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRSSParser.xcconfig"; path = "Pods/Pods-MediaRSSParser.xcconfig"; sourceTree = "<group>"; };
-		891DE1AC37714A98A22A3026 /* libPods-MediaRSSParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MediaRSSParser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9430DA407CEB4C96B2885102 /* libPods-MediaRSSParserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MediaRSSParserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		44F4D6CB192ACC8900B1C78A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44F4D6D2192ACC8900B1C78A /* Foundation.framework in Frameworks */,
-				4BFC5B3F1E6F447784BF55FC /* libPods-MediaRSSParser.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44F4D6DB192ACC8900B1C78A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44F4D6E0192ACC8900B1C78A /* XCTest.framework in Frameworks */,
-				44F4D6E3192ACC8900B1C78A /* UIKit.framework in Frameworks */,
-				44F4D6E6192ACC8900B1C78A /* libMediaRSSParser.a in Frameworks */,
-				44F4D6E1192ACC8900B1C78A /* Foundation.framework in Frameworks */,
-				10D5053095B240E7B3A09D9D /* libPods-MediaRSSParserTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		444B3A43193324230038D9FF /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				444B3A4B19333EA70038D9FF /* Media_RSS_Example.xml */,
-				444B3A49193325600038D9FF /* RSS_2_Example.xml */,
-			);
-			name = Data;
-			sourceTree = "<group>";
-		};
-		44A47EC9192E658300B0B940 /* Cases */ = {
-			isa = PBXGroup;
-			children = (
-				44A47EC7192E656C00B0B940 /* RSSParserTests.m */,
-			);
-			name = Cases;
-			sourceTree = "<group>";
-		};
-		44A47ECA192E659100B0B940 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				44A47ECC192E65A900B0B940 /* Test_RSSParser.h */,
-				44A47ECD192E65A900B0B940 /* Test_RSSParser.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		44A47ED5192E96ED00B0B940 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				44A47ED6192E970500B0B940 /* RSSParser+TestMethods.h */,
-				44A47ED7192E970500B0B940 /* RSSParser+TestMethods.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		44F4D6C5192ACC8900B1C78A = {
-			isa = PBXGroup;
-			children = (
-				44F4D6D3192ACC8900B1C78A /* MediaRSSParser */,
-				44F4D6E7192ACC8900B1C78A /* MediaRSSParserTests */,
-				44F4D6D0192ACC8900B1C78A /* Frameworks */,
-				44F4D6CF192ACC8900B1C78A /* Products */,
-				616599D28F5F48E499D3F754 /* Pods-MediaRSSParser.xcconfig */,
-				4E946093F2214B3DB6111D31 /* Pods-MediaRSSParserTests.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		44F4D6CF192ACC8900B1C78A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				44F4D6CE192ACC8900B1C78A /* libMediaRSSParser.a */,
-				44F4D6DE192ACC8900B1C78A /* MediaRSSParserTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		44F4D6D0192ACC8900B1C78A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				44F4D6D1192ACC8900B1C78A /* Foundation.framework */,
-				44F4D6DF192ACC8900B1C78A /* XCTest.framework */,
-				44F4D6E2192ACC8900B1C78A /* UIKit.framework */,
-				891DE1AC37714A98A22A3026 /* libPods-MediaRSSParser.a */,
-				9430DA407CEB4C96B2885102 /* libPods-MediaRSSParserTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		44F4D6D3192ACC8900B1C78A /* MediaRSSParser */ = {
-			isa = PBXGroup;
-			children = (
-				44F4D70F192ACD8600B1C78A /* MediaRSSParser.h */,
-				44F4D6F9192ACCFB00B1C78A /* MediaRSSModels.h */,
-				44F4D70E192ACD5900B1C78A /* Parser */,
-				44F4D70D192ACD2E00B1C78A /* Models */,
-				44F4D70C192ACD2700B1C78A /* Categories */,
-				44F4D6D4192ACC8900B1C78A /* Supporting Files */,
-			);
-			path = MediaRSSParser;
-			sourceTree = "<group>";
-		};
-		44F4D6D4192ACC8900B1C78A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				44F4D6D5192ACC8900B1C78A /* MediaRSSParser-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		44F4D6E7192ACC8900B1C78A /* MediaRSSParserTests */ = {
-			isa = PBXGroup;
-			children = (
-				44A47EC9192E658300B0B940 /* Cases */,
-				44A47ED5192E96ED00B0B940 /* Categories */,
-				44A47ECA192E659100B0B940 /* Classes */,
-				444B3A43193324230038D9FF /* Data */,
-				44F4D6E8192ACC8900B1C78A /* Supporting Files */,
-			);
-			path = MediaRSSParserTests;
-			sourceTree = "<group>";
-		};
-		44F4D6E8192ACC8900B1C78A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				44F4D6E9192ACC8900B1C78A /* MediaRSSParserTests-Info.plist */,
-				44F4D6EA192ACC8900B1C78A /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		44F4D70C192ACD2700B1C78A /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				44F4D6F7192ACCFB00B1C78A /* GTMNSString+HTML.h */,
-				44F4D6F8192ACCFB00B1C78A /* GTMNSString+HTML.m */,
-				44A30815192FEEAD00D65886 /* NSString+HTML.h */,
-				44A30816192FEEAD00D65886 /* NSString+HTML.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		44F4D70D192ACD2E00B1C78A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				444B3A3D193273E10038D9FF /* RSSChannel.h */,
-				444B3A3E193273E10038D9FF /* RSSChannel.m */,
-				44F4D6FE192ACCFB00B1C78A /* RSSItem.h */,
-				44F4D6FF192ACCFB00B1C78A /* RSSItem.m */,
-				44F4D702192ACCFB00B1C78A /* RSSMediaContent.h */,
-				44F4D703192ACCFB00B1C78A /* RSSMediaContent.m */,
-				44F4D700192ACCFB00B1C78A /* RSSMediaCredit.h */,
-				44F4D701192ACCFB00B1C78A /* RSSMediaCredit.m */,
-				444B3A401932DEC90038D9FF /* RSSMediaThumbnail.h */,
-				444B3A411932DEC90038D9FF /* RSSMediaThumbnail.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		44F4D70E192ACD5900B1C78A /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				44F4D704192ACCFB00B1C78A /* RSSParser.h */,
-				44F4D705192ACCFB00B1C78A /* RSSParser.m */,
-				44F4D710192AD1E600B1C78A /* RSSParser_Protected.h */,
-			);
-			name = Parser;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		44F4D6CD192ACC8900B1C78A /* MediaRSSParser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44F4D6F1192ACC8900B1C78A /* Build configuration list for PBXNativeTarget "MediaRSSParser" */;
-			buildPhases = (
-				1B34932DDC8349D6AB5541B0 /* Check Pods Manifest.lock */,
-				44F4D6CA192ACC8900B1C78A /* Sources */,
-				44F4D6CB192ACC8900B1C78A /* Frameworks */,
-				44F4D6CC192ACC8900B1C78A /* CopyFiles */,
-				18E901CB500745AAB81331C9 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MediaRSSParser;
-			productName = MediaRSSParser;
-			productReference = 44F4D6CE192ACC8900B1C78A /* libMediaRSSParser.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		44F4D6DD192ACC8900B1C78A /* MediaRSSParserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44F4D6F4192ACC8900B1C78A /* Build configuration list for PBXNativeTarget "MediaRSSParserTests" */;
-			buildPhases = (
-				1CE5635F5CF14C49A03D720F /* Check Pods Manifest.lock */,
-				44F4D6DA192ACC8900B1C78A /* Sources */,
-				44F4D6DB192ACC8900B1C78A /* Frameworks */,
-				44F4D6DC192ACC8900B1C78A /* Resources */,
-				3105F1403C7C4976AC548FD3 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				44F4D6E5192ACC8900B1C78A /* PBXTargetDependency */,
-			);
-			name = MediaRSSParserTests;
-			productName = MediaRSSParserTests;
-			productReference = 44F4D6DE192ACC8900B1C78A /* MediaRSSParserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		44F4D6C6192ACC8900B1C78A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "App-Order, LLC";
-			};
-			buildConfigurationList = 44F4D6C9192ACC8900B1C78A /* Build configuration list for PBXProject "MediaRSSParser" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 44F4D6C5192ACC8900B1C78A;
-			productRefGroup = 44F4D6CF192ACC8900B1C78A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				44F4D6CD192ACC8900B1C78A /* MediaRSSParser */,
-				44F4D6DD192ACC8900B1C78A /* MediaRSSParserTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		44F4D6DC192ACC8900B1C78A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				444B3A4A193325600038D9FF /* RSS_2_Example.xml in Resources */,
-				44F4D6EC192ACC8900B1C78A /* InfoPlist.strings in Resources */,
-				444B3A4C19333EA70038D9FF /* Media_RSS_Example.xml in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		18E901CB500745AAB81331C9 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-MediaRSSParser-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B34932DDC8349D6AB5541B0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		1CE5635F5CF14C49A03D720F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3105F1403C7C4976AC548FD3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-MediaRSSParserTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		44F4D6CA192ACC8900B1C78A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				444B3A3F193273E10038D9FF /* RSSChannel.m in Sources */,
-				44F4D70B192ACCFB00B1C78A /* RSSParser.m in Sources */,
-				444B3A421932DEC90038D9FF /* RSSMediaThumbnail.m in Sources */,
-				44F4D70A192ACCFB00B1C78A /* RSSMediaContent.m in Sources */,
-				44F4D706192ACCFB00B1C78A /* GTMNSString+HTML.m in Sources */,
-				44F4D709192ACCFB00B1C78A /* RSSMediaCredit.m in Sources */,
-				44A30817192FEEAD00D65886 /* NSString+HTML.m in Sources */,
-				44F4D708192ACCFB00B1C78A /* RSSItem.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44F4D6DA192ACC8900B1C78A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44A47EC8192E656C00B0B940 /* RSSParserTests.m in Sources */,
-				44A47ED8192E970500B0B940 /* RSSParser+TestMethods.m in Sources */,
-				44A47ECE192E65A900B0B940 /* Test_RSSParser.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		44F4D6E5192ACC8900B1C78A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 44F4D6CD192ACC8900B1C78A /* MediaRSSParser */;
-			targetProxy = 44F4D6E4192ACC8900B1C78A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		44F4D6EA192ACC8900B1C78A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44F4D6EB192ACC8900B1C78A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		44F4D6EF192ACC8900B1C78A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		44F4D6F0192ACC8900B1C78A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		44F4D6F2192ACC8900B1C78A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 616599D28F5F48E499D3F754 /* Pods-MediaRSSParser.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/MediaRSSParser.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MediaRSSParser/MediaRSSParser-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		44F4D6F3192ACC8900B1C78A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 616599D28F5F48E499D3F754 /* Pods-MediaRSSParser.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/MediaRSSParser.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MediaRSSParser/MediaRSSParser-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		44F4D6F5192ACC8900B1C78A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E946093F2214B3DB6111D31 /* Pods-MediaRSSParserTests.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MediaRSSParser/MediaRSSParser-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MediaRSSParserTests/MediaRSSParserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		44F4D6F6192ACC8900B1C78A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E946093F2214B3DB6111D31 /* Pods-MediaRSSParserTests.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MediaRSSParser/MediaRSSParser-Prefix.pch";
-				INFOPLIST_FILE = "MediaRSSParserTests/MediaRSSParserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		44F4D6C9192ACC8900B1C78A /* Build configuration list for PBXProject "MediaRSSParser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44F4D6EF192ACC8900B1C78A /* Debug */,
-				44F4D6F0192ACC8900B1C78A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44F4D6F1192ACC8900B1C78A /* Build configuration list for PBXNativeTarget "MediaRSSParser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44F4D6F2192ACC8900B1C78A /* Debug */,
-				44F4D6F3192ACC8900B1C78A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44F4D6F4192ACC8900B1C78A /* Build configuration list for PBXNativeTarget "MediaRSSParserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44F4D6F5192ACC8900B1C78A /* Debug */,
-				44F4D6F6192ACC8900B1C78A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 44F4D6C6192ACC8900B1C78A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>10D5053095B240E7B3A09D9D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9430DA407CEB4C96B2885102</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>153F35E8EC7F8A8A69EECA2C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>45FFFF296BC34BABF10280DF</string>
+				<string>E50C527A734FEF33E984289E</string>
+				<string>A76432B9440EF9C056A958FB</string>
+				<string>2D08FE122F4B395CDD3DBD81</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18E901CB500745AAB81331C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1B34932DDC8349D6AB5541B0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1CE5635F5CF14C49A03D720F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2D08FE122F4B395CDD3DBD81</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-MediaRSSParserTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-MediaRSSParserTests/Pods-MediaRSSParserTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3105F1403C7C4976AC548FD3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MediaRSSParserTests/Pods-MediaRSSParserTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>444B3A3D193273E10038D9FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSChannel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444B3A3E193273E10038D9FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSChannel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444B3A3F193273E10038D9FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>444B3A3E193273E10038D9FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>444B3A401932DEC90038D9FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSMediaThumbnail.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444B3A411932DEC90038D9FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSMediaThumbnail.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444B3A421932DEC90038D9FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>444B3A411932DEC90038D9FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>444B3A43193324230038D9FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>444B3A4B19333EA70038D9FF</string>
+				<string>444B3A49193325600038D9FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Data</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444B3A49193325600038D9FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>RSS_2_Example.xml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444B3A4A193325600038D9FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>444B3A49193325600038D9FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>444B3A4B19333EA70038D9FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>Media_RSS_Example.xml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444B3A4C19333EA70038D9FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>444B3A4B19333EA70038D9FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44A30815192FEEAD00D65886</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSString+HTML.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A30816192FEEAD00D65886</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSString+HTML.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A30817192FEEAD00D65886</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44A30816192FEEAD00D65886</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44A47EC7192E656C00B0B940</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSParserTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47EC8192E656C00B0B940</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44A47EC7192E656C00B0B940</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44A47EC9192E658300B0B940</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44A47EC7192E656C00B0B940</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Cases</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47ECA192E659100B0B940</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44A47ECC192E65A900B0B940</string>
+				<string>44A47ECD192E65A900B0B940</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47ECC192E65A900B0B940</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Test_RSSParser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47ECD192E65A900B0B940</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Test_RSSParser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47ECE192E65A900B0B940</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44A47ECD192E65A900B0B940</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44A47ED5192E96ED00B0B940</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44A47ED6192E970500B0B940</string>
+				<string>44A47ED7192E970500B0B940</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Categories</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47ED6192E970500B0B940</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSParser+TestMethods.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47ED7192E970500B0B940</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSParser+TestMethods.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44A47ED8192E970500B0B940</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44A47ED7192E970500B0B940</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D6C5192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D6D3192ACC8900B1C78A</string>
+				<string>44F4D6E7192ACC8900B1C78A</string>
+				<string>44F4D6D0192ACC8900B1C78A</string>
+				<string>44F4D6CF192ACC8900B1C78A</string>
+				<string>153F35E8EC7F8A8A69EECA2C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6C6192ACC8900B1C78A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>App-Order, LLC</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>44F4D6C9192ACC8900B1C78A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>44F4D6C5192ACC8900B1C78A</string>
+			<key>productRefGroup</key>
+			<string>44F4D6CF192ACC8900B1C78A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>44F4D6CD192ACC8900B1C78A</string>
+				<string>44F4D6DD192ACC8900B1C78A</string>
+			</array>
+		</dict>
+		<key>44F4D6C9192ACC8900B1C78A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>44F4D6EF192ACC8900B1C78A</string>
+				<string>44F4D6F0192ACC8900B1C78A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>44F4D6CA192ACC8900B1C78A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>444B3A3F193273E10038D9FF</string>
+				<string>44F4D70B192ACCFB00B1C78A</string>
+				<string>444B3A421932DEC90038D9FF</string>
+				<string>44F4D70A192ACCFB00B1C78A</string>
+				<string>44F4D706192ACCFB00B1C78A</string>
+				<string>44F4D709192ACCFB00B1C78A</string>
+				<string>44A30817192FEEAD00D65886</string>
+				<string>44F4D708192ACCFB00B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44F4D6CB192ACC8900B1C78A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>44F4D6D2192ACC8900B1C78A</string>
+				<string>4BFC5B3F1E6F447784BF55FC</string>
+				<string>85D96BAEDDC22CD17F8D63D9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44F4D6CC192ACC8900B1C78A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>include/$(PRODUCT_NAME)</string>
+			<key>dstSubfolderSpec</key>
+			<string>16</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44F4D6CD192ACC8900B1C78A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>44F4D6F1192ACC8900B1C78A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1B34932DDC8349D6AB5541B0</string>
+				<string>44F4D6CA192ACC8900B1C78A</string>
+				<string>44F4D6CB192ACC8900B1C78A</string>
+				<string>44F4D6CC192ACC8900B1C78A</string>
+				<string>18E901CB500745AAB81331C9</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MediaRSSParser</string>
+			<key>productName</key>
+			<string>MediaRSSParser</string>
+			<key>productReference</key>
+			<string>44F4D6CE192ACC8900B1C78A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>44F4D6CE192ACC8900B1C78A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libMediaRSSParser.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>44F4D6CF192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D6CE192ACC8900B1C78A</string>
+				<string>44F4D6DE192ACC8900B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6D0192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D6D1192ACC8900B1C78A</string>
+				<string>44F4D6DF192ACC8900B1C78A</string>
+				<string>44F4D6E2192ACC8900B1C78A</string>
+				<string>891DE1AC37714A98A22A3026</string>
+				<string>9430DA407CEB4C96B2885102</string>
+				<string>E8B5F3A91AF63EE42158D751</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6D1192ACC8900B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>44F4D6D2192ACC8900B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6D1192ACC8900B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D6D3192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D70F192ACD8600B1C78A</string>
+				<string>44F4D6F9192ACCFB00B1C78A</string>
+				<string>44F4D70E192ACD5900B1C78A</string>
+				<string>44F4D70D192ACD2E00B1C78A</string>
+				<string>44F4D70C192ACD2700B1C78A</string>
+				<string>44F4D6D4192ACC8900B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MediaRSSParser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6D4192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D6D5192ACC8900B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6D5192ACC8900B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MediaRSSParser-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6DA192ACC8900B1C78A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>44A47EC8192E656C00B0B940</string>
+				<string>44A47ED8192E970500B0B940</string>
+				<string>44A47ECE192E65A900B0B940</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44F4D6DB192ACC8900B1C78A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>44F4D6E0192ACC8900B1C78A</string>
+				<string>44F4D6E3192ACC8900B1C78A</string>
+				<string>44F4D6E6192ACC8900B1C78A</string>
+				<string>44F4D6E1192ACC8900B1C78A</string>
+				<string>10D5053095B240E7B3A09D9D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44F4D6DC192ACC8900B1C78A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>444B3A4A193325600038D9FF</string>
+				<string>44F4D6EC192ACC8900B1C78A</string>
+				<string>444B3A4C19333EA70038D9FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44F4D6DD192ACC8900B1C78A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>44F4D6F4192ACC8900B1C78A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1CE5635F5CF14C49A03D720F</string>
+				<string>44F4D6DA192ACC8900B1C78A</string>
+				<string>44F4D6DB192ACC8900B1C78A</string>
+				<string>44F4D6DC192ACC8900B1C78A</string>
+				<string>3105F1403C7C4976AC548FD3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>44F4D6E5192ACC8900B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MediaRSSParserTests</string>
+			<key>productName</key>
+			<string>MediaRSSParserTests</string>
+			<key>productReference</key>
+			<string>44F4D6DE192ACC8900B1C78A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>44F4D6DE192ACC8900B1C78A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MediaRSSParserTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>44F4D6DF192ACC8900B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>44F4D6E0192ACC8900B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6DF192ACC8900B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D6E1192ACC8900B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6D1192ACC8900B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D6E2192ACC8900B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>44F4D6E3192ACC8900B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6E2192ACC8900B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D6E4192ACC8900B1C78A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>44F4D6C6192ACC8900B1C78A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>44F4D6CD192ACC8900B1C78A</string>
+			<key>remoteInfo</key>
+			<string>MediaRSSParser</string>
+		</dict>
+		<key>44F4D6E5192ACC8900B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>44F4D6CD192ACC8900B1C78A</string>
+			<key>targetProxy</key>
+			<string>44F4D6E4192ACC8900B1C78A</string>
+		</dict>
+		<key>44F4D6E6192ACC8900B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6CE192ACC8900B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D6E7192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44A47EC9192E658300B0B940</string>
+				<string>44A47ED5192E96ED00B0B940</string>
+				<string>44A47ECA192E659100B0B940</string>
+				<string>444B3A43193324230038D9FF</string>
+				<string>44F4D6E8192ACC8900B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MediaRSSParserTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6E8192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D6E9192ACC8900B1C78A</string>
+				<string>44F4D6EA192ACC8900B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6E9192ACC8900B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>MediaRSSParserTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6EA192ACC8900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D6EB192ACC8900B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6EB192ACC8900B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6EC192ACC8900B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6EA192ACC8900B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D6EF192ACC8900B1C78A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>44F4D6F0192ACC8900B1C78A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>44F4D6F1192ACC8900B1C78A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>44F4D6F2192ACC8900B1C78A</string>
+				<string>44F4D6F3192ACC8900B1C78A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>44F4D6F2192ACC8900B1C78A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>45FFFF296BC34BABF10280DF</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/MediaRSSParser.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MediaRSSParser/MediaRSSParser-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>44F4D6F3192ACC8900B1C78A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E50C527A734FEF33E984289E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/MediaRSSParser.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MediaRSSParser/MediaRSSParser-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>44F4D6F4192ACC8900B1C78A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>44F4D6F5192ACC8900B1C78A</string>
+				<string>44F4D6F6192ACC8900B1C78A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>44F4D6F5192ACC8900B1C78A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A76432B9440EF9C056A958FB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MediaRSSParser/MediaRSSParser-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>MediaRSSParserTests/MediaRSSParserTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>44F4D6F6192ACC8900B1C78A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2D08FE122F4B395CDD3DBD81</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MediaRSSParser/MediaRSSParser-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MediaRSSParserTests/MediaRSSParserTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>44F4D6F7192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GTMNSString+HTML.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6F8192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GTMNSString+HTML.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6F9192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MediaRSSModels.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6FE192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSItem.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D6FF192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSItem.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D700192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSMediaCredit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D701192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSMediaCredit.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D702192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSMediaContent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D703192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSMediaContent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D704192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSParser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D705192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RSSParser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D706192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6F8192ACCFB00B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D708192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D6FF192ACCFB00B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D709192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D701192ACCFB00B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D70A192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D703192ACCFB00B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D70B192ACCFB00B1C78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44F4D705192ACCFB00B1C78A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>44F4D70C192ACD2700B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D6F7192ACCFB00B1C78A</string>
+				<string>44F4D6F8192ACCFB00B1C78A</string>
+				<string>44A30815192FEEAD00D65886</string>
+				<string>44A30816192FEEAD00D65886</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Categories</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D70D192ACD2E00B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>444B3A3D193273E10038D9FF</string>
+				<string>444B3A3E193273E10038D9FF</string>
+				<string>44F4D6FE192ACCFB00B1C78A</string>
+				<string>44F4D6FF192ACCFB00B1C78A</string>
+				<string>44F4D702192ACCFB00B1C78A</string>
+				<string>44F4D703192ACCFB00B1C78A</string>
+				<string>44F4D700192ACCFB00B1C78A</string>
+				<string>44F4D701192ACCFB00B1C78A</string>
+				<string>444B3A401932DEC90038D9FF</string>
+				<string>444B3A411932DEC90038D9FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D70E192ACD5900B1C78A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44F4D704192ACCFB00B1C78A</string>
+				<string>44F4D705192ACCFB00B1C78A</string>
+				<string>44F4D710192AD1E600B1C78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Parser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D70F192ACD8600B1C78A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MediaRSSParser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44F4D710192AD1E600B1C78A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSSParser_Protected.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45FFFF296BC34BABF10280DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4BFC5B3F1E6F447784BF55FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>891DE1AC37714A98A22A3026</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>85D96BAEDDC22CD17F8D63D9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8B5F3A91AF63EE42158D751</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>891DE1AC37714A98A22A3026</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-MediaRSSParser.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9430DA407CEB4C96B2885102</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-MediaRSSParserTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A76432B9440EF9C056A958FB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-MediaRSSParserTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-MediaRSSParserTests/Pods-MediaRSSParserTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E50C527A734FEF33E984289E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8B5F3A91AF63EE42158D751</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>44F4D6C6192ACC8900B1C78A</string>
+</dict>
+</plist>
