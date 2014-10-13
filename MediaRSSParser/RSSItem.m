@@ -25,99 +25,143 @@
 
 #import "RSSItem.h"
 
+@interface RSSItem ()
+
+@property (nonatomic, strong) NSMutableDictionary *unknownElements;
+
+@end
+
+
 @implementation RSSItem
 
 #pragma mark - Getting Images from HTML
 
+- (id)init{
+    self = [super init];
+    
+    if (self) {
+        _unknownElements = [[NSMutableDictionary alloc] init];
+    }
+    
+    return self;
+}
+
 - (NSArray *)imagesFromItemDescription
 {
-  return self.itemDescription.length ? [self imagesFromHTML:self.itemDescription] : nil;
+    return self.itemDescription.length ? [self imagesFromHTML:self.itemDescription] : nil;
 }
 
 - (NSArray *)imagesFromMediaText
 {
-  return self.mediaText.length ? [self imagesFromHTML:self.mediaText] : nil;
+    return self.mediaText.length ? [self imagesFromHTML:self.mediaText] : nil;
 }
 
 - (NSArray *)imagesFromHTML:(NSString *)html
 {
-  NSMutableArray *imagesURLStringArray = [[NSMutableArray alloc] init];
-  
-  NSError *error;
-  
-  NSRegularExpression *regex = [NSRegularExpression
-                                regularExpressionWithPattern:@"(https?)\\S*(png|jpg|jpeg|gif)"
-                                options:NSRegularExpressionCaseInsensitive
-                                error:&error];
-  
-  [regex enumerateMatchesInString:html
-                          options:0
-                            range:NSMakeRange(0, html.length)
-                       usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
-                         [imagesURLStringArray addObject:[html substringWithRange:result.range]];
-                       }];
-  
-  return [NSArray arrayWithArray:imagesURLStringArray];
+    NSMutableArray *imagesURLStringArray = [[NSMutableArray alloc] init];
+    
+    NSError *error;
+    
+    NSRegularExpression *regex = [NSRegularExpression
+                                  regularExpressionWithPattern:@"(https?)\\S*(png|jpg|jpeg|gif)"
+                                  options:NSRegularExpressionCaseInsensitive
+                                  error:&error];
+    
+    [regex enumerateMatchesInString:html
+                            options:0
+                              range:NSMakeRange(0, html.length)
+                         usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+                             [imagesURLStringArray addObject:[html substringWithRange:result.range]];
+                         }];
+    
+    return [NSArray arrayWithArray:imagesURLStringArray];
+}
+
+#pragma mark - unknown Elements to RSS specification
+
+- (NSDictionary *)unsupportedElements {
+    return [self.unknownElements copy];
+}
+
+- (void)addUnsupportedElementWithKey:(NSString *)key value:(id)value {
+    NSArray *unsupportedValues = self.unknownElements[key];
+    
+    if (unsupportedValues != nil) {
+        if ([unsupportedValues isKindOfClass:[NSArray class]]) {
+            self.unknownElements[key] = [unsupportedValues arrayByAddingObject:value];
+        }
+        else {
+            self.unknownElements[key] = @[unsupportedValues, value];
+        }
+    }
+    else {
+        self.unknownElements[key] = value;
+    }
 }
 
 #pragma mark - NSCoding
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-  if (self = [super init]) {
-    _title = [aDecoder decodeObjectForKey:@"title"];
-    _link = [aDecoder decodeObjectForKey:@"link"];
-    _itemDescription = [aDecoder decodeObjectForKey:@"itemDescription"];
-    _authorEmail = [aDecoder decodeObjectForKey:@"authorEmail"];
-    _commentsURL = [aDecoder decodeObjectForKey:@"commentsURL"];
-    _guid = [aDecoder decodeObjectForKey:@"guid"];
-    _pubDate = [aDecoder decodeObjectForKey:@"pubDate"];
+    if (self = [super init]) {
+        _title = [aDecoder decodeObjectForKey:@"title"];
+        _link = [aDecoder decodeObjectForKey:@"link"];
+        _itemDescription = [aDecoder decodeObjectForKey:@"itemDescription"];
+        _authorEmail = [aDecoder decodeObjectForKey:@"authorEmail"];
+        _commentsURL = [aDecoder decodeObjectForKey:@"commentsURL"];
+        _guid = [aDecoder decodeObjectForKey:@"guid"];
+        _pubDate = [aDecoder decodeObjectForKey:@"pubDate"];
+        
+        _mediaContents = [aDecoder decodeObjectForKey:@"mediaContents"];
+        _mediaTitle = [aDecoder decodeObjectForKey:@"mediaTitle"];
+        _mediaDescription = [aDecoder decodeObjectForKey:@"mediaDescription"];
+        _mediaCredits = [aDecoder decodeObjectForKey:@"mediaCredits"];
+        _mediaThumbnails = [aDecoder decodeObjectForKey:@"mediaThumbnails"];
+        _mediaText = [aDecoder decodeObjectForKey:@"mediaText"];
+        
+        _unknownElements = [aDecoder decodeObjectForKey:@"unknownElements"];
+    }
     
-    _mediaContents = [aDecoder decodeObjectForKey:@"mediaContents"];
-    _mediaTitle = [aDecoder decodeObjectForKey:@"mediaTitle"];
-    _mediaDescription = [aDecoder decodeObjectForKey:@"mediaDescription"];
-    _mediaCredits = [aDecoder decodeObjectForKey:@"mediaCredits"];
-    _mediaThumbnails = [aDecoder decodeObjectForKey:@"mediaThumbnails"];
-    _mediaText = [aDecoder decodeObjectForKey:@"mediaText"];
-  }
-  return self;
+    return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-  [aCoder encodeObject:self.title forKey:@"title"];
-  [aCoder encodeObject:self.link forKey:@"link"];
-  [aCoder encodeObject:self.itemDescription forKey:@"itemDescription"];
-  [aCoder encodeObject:self.authorEmail forKey:@"authorEmail"];
-  [aCoder encodeObject:self.commentsURL forKey:@"commentsLink"];
-  [aCoder encodeObject:self.guid forKey:@"guid"];
-  [aCoder encodeObject:self.pubDate forKey:@"pubDate"];
-  
-  [aCoder encodeObject:self.mediaContents forKey:@"mediaContents"];
-  [aCoder encodeObject:self.mediaTitle forKey:@"mediaTitle"];
-  [aCoder encodeObject:self.mediaDescription forKey:@"mediaDescription"];
-  [aCoder encodeObject:self.mediaCredits forKey:@"mediaCredits"];
-  [aCoder encodeObject:self.mediaThumbnails forKey:@"mediaThumbnails"];
-  [aCoder encodeObject:self.mediaText forKey:@"mediaText"];
+    [aCoder encodeObject:self.title forKey:@"title"];
+    [aCoder encodeObject:self.link forKey:@"link"];
+    [aCoder encodeObject:self.itemDescription forKey:@"itemDescription"];
+    [aCoder encodeObject:self.authorEmail forKey:@"authorEmail"];
+    [aCoder encodeObject:self.commentsURL forKey:@"commentsLink"];
+    [aCoder encodeObject:self.guid forKey:@"guid"];
+    [aCoder encodeObject:self.pubDate forKey:@"pubDate"];
+    
+    [aCoder encodeObject:self.mediaContents forKey:@"mediaContents"];
+    [aCoder encodeObject:self.mediaTitle forKey:@"mediaTitle"];
+    [aCoder encodeObject:self.mediaDescription forKey:@"mediaDescription"];
+    [aCoder encodeObject:self.mediaCredits forKey:@"mediaCredits"];
+    [aCoder encodeObject:self.mediaThumbnails forKey:@"mediaThumbnails"];
+    [aCoder encodeObject:self.mediaText forKey:@"mediaText"];
+    
+    [aCoder encodeObject:self.unknownElements forKey:@"unknownElements"];
 }
 
 #pragma mark - NSObject Protocol
 
 - (BOOL)isEqual:(RSSItem *)object
 {
-  return [object isKindOfClass:[self class]] &&
+    return [object isKindOfClass:[self class]] &&
     [object.link.absoluteString isEqualToString:self.link.absoluteString];
 }
 
 - (NSUInteger)hash
 {
-  return [self.link.absoluteString hash];
+    return [self.link.absoluteString hash];
 }
 
 - (NSString *)description
 {
-  return [NSString stringWithFormat:@"<%@: %@>", [self class],
-          [self.title stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+    return [NSString stringWithFormat:@"<%@: %@>", [self class],
+            [self.title stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 }
 
 @end

@@ -30,21 +30,21 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-  if (self = [super init]) {
-    _url = [aDecoder decodeObjectForKey:@"url"];
-    _size.height = [[aDecoder decodeObjectForKey:@"height"] floatValue];
-    _size.width = [[aDecoder decodeObjectForKey:@"width"] floatValue];
-    _timeOffset = [aDecoder decodeObjectForKey:@"timeOffset"];
-  }
-  return self;
+    if (self = [super init]) {
+        _url = [aDecoder decodeObjectForKey:@"url"];
+        _size.height = [[aDecoder decodeObjectForKey:@"height"] floatValue];
+        _size.width = [[aDecoder decodeObjectForKey:@"width"] floatValue];
+        _timeOffset = [aDecoder decodeObjectForKey:@"timeOffset"];
+    }
+    return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-  [aCoder encodeObject:self.url forKey:@"url"];
-  [aCoder encodeObject:@(self.size.height) forKey:@"height"];
-  [aCoder encodeObject:@(self.size.width) forKey:@"width"];
-  [aCoder encodeObject:self.timeOffset forKey:@"timeOffset"];
+    [aCoder encodeObject:self.url forKey:@"url"];
+    [aCoder encodeObject:@(self.size.height) forKey:@"height"];
+    [aCoder encodeObject:@(self.size.width) forKey:@"width"];
+    [aCoder encodeObject:self.timeOffset forKey:@"timeOffset"];
 }
 
 @end

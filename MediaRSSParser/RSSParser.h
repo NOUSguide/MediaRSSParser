@@ -62,7 +62,7 @@
  *  @param parameters The parameters to be included in the GET request
  *  @param success    The success block to be called on parser successful completion
  *  @param failure    The failure block to be called on network or parser error
-
+ 
  *  @warning Both the `success` and `failure` blocks capture self (creates a strong references self). This creates a retain cycle until either success or failure results (both `success` and `failure` block are set to `nil` after either occurs).
  *
  */

@@ -146,7 +146,7 @@
 }
 
 - (NSString *)stringWithNewLinesAsBRs {
-	@autoreleasepool {
+    @autoreleasepool {
         
         // Strange New lines:
         //	Next Line, U+0085
@@ -195,11 +195,11 @@
         // Return
         return retString;
         
-	}
+    }
 }
 
 - (NSString *)stringByRemovingNewLinesAndWhitespace {
-	@autoreleasepool {
+    @autoreleasepool {
         
         // Strange New lines:
         //	Next Line, U+0085
@@ -237,7 +237,7 @@
         
         // Return
         return retString;
-	}
+    }
 }
 
 - (NSString *)stringByLinkifyingURLs {
@@ -252,7 +252,7 @@
 }
 
 - (NSString *)stringByStrippingTags {
-	@autoreleasepool {
+    @autoreleasepool {
         
         // Find first & and short-cut if we can
         NSUInteger ampIndex = [self rangeOfString:@"<" options:NSLiteralSearch].location;
@@ -316,7 +316,7 @@
         // Return
         return finalString;
         
-	}
+    }
 }
 
 @end

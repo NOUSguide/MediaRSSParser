@@ -110,7 +110,7 @@
  *  The `size.height` corresponds to the `height` attribrute, and the `size.width` corresponds to the `width` attribute on a `media:content` element.
  *
  *  Per the Media RSS specificiation, "height is the height of the media object," and "width is the width of the width object."
- *  
+ *
  *  Units are expected to be in pixels.
  */
 @property (nonatomic, assign) CGSize size;

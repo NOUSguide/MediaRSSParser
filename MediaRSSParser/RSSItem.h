@@ -54,15 +54,15 @@
 @property (nonatomic, copy) NSURL *link;
 
 /**
- *  This property corresponds to the `description` element within an `item`. 
- *  
+ *  This property corresponds to the `description` element within an `item`.
+ *
  *  Per RSS 2.0 specification, it is the "item synopsis."
  */
 @property (nonatomic, copy) NSString *itemDescription;
 
 /**
  *  This property corresponds to the `author` element within an `item` element.
- *  
+ *
  *  Per RSS 2.0 specification, it is the "email address of the author of the item."
  */
 @property (nonatomic, copy) NSString *authorEmail;
@@ -76,7 +76,7 @@
 
 /**
  *  This property corresponds to the `guid` element within an `item` element.
- *  
+ *
  *  Per RSS 2.0 specification, it is "a string that uniquely identifies the item."
  */
 @property (nonatomic, copy) NSString *guid;
@@ -99,7 +99,7 @@
  *  This is an array of `RSSMediaContent` objects, corresponding to the `media:content` elements within an `item` element.
  *
  *  This is part of the Media RSS specification, a namespace extension to RSS 2.0.
- *  
+ *
  *  Per the Media RSS specification, "this element can be used to publish any type of media."
  */
 @property (nonatomic, copy) NSArray *mediaContents;
@@ -111,7 +111,7 @@
 
 /**
  *  This property corresponds to the `media:title` element within an `item` element.
- *  
+ *
  *  This is part of the Media RSS specification, a namespace extension to RSS 2.0.
  *
  *  Per the Media RSS specification, it is "the title of the particular media object."
@@ -120,9 +120,9 @@
 
 /**
  *  Corresponds to the `media:description` element within an `item` element.
- *  
+ *
  *  This is part of the Media RSS specification, a namespace extension to RSS 2.0.
- *  
+ *
  *  Per the Media RSS specification, it is a "short description describing the media object typically a sentence in length."
  */
 @property (nonatomic, copy) NSString *mediaDescription;
@@ -139,7 +139,7 @@
 /**
  *  This is an array of `RSSMediaCredit` objects, corresponding to the `media:credit` elements within an `item` element.
  *
- *  This is part of the Media RSS specification, a namespace extension to RSS 2.0. 
+ *  This is part of the Media RSS specification, a namespace extension to RSS 2.0.
  *
  *  Per the Media RSS specification, it is a "notable entity and the contribution to the creation of the media object."
  */
@@ -147,7 +147,7 @@
 
 /**
  *  Corresponds to the `media:text` element within an `item` element.
- *  
+ *
  *  This is part of the Media RSS specification, a namespace extension to RSS 2.0.
  *
  *  Per the Media RSS specification, it "allows the inclusion of a text transcript, closed captioning or lyrics of the media content."
@@ -181,5 +181,9 @@
  *  @return An array of `NSString` objects containing URLs (strings starting within `http` or `https`) to all images within the passed in `html` string.
  */
 - (NSArray *)imagesFromHTML:(NSString *)html;
+
+
+- (NSDictionary *)unsupportedElements;
+- (void)addUnsupportedElementWithKey:(NSString *)key value:(id)value;
 
 @end

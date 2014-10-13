@@ -38,21 +38,21 @@
 
 /**
  *  This property corresponds to the `title` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "name of the channel."
  */
 @property (nonatomic, copy) NSString *title;
 
 /**
  *  This property corresponds to the `link` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "URL to the HTML website corresponding to the channel."
  */
 @property (nonatomic, copy) NSURL *link;
 
 /**
  *  This property corresponds to the `description` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is "a phrase or sentence describing the channel."
  */
 @property (nonatomic, copy) NSString *channelDescription;
@@ -64,42 +64,42 @@
 
 /**
  *  This property corresponds to the `language` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "language the channel is written in."
  */
 @property (nonatomic, copy) NSString *language;
 
 /**
  *  This property corresponds to the `copyright` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "copyright notice for content in the channel."
  */
 @property (nonatomic, copy) NSString *copyright;
 
 /**
  *  This property corresponds to the `managingEditor` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "email address for the person responsible for editorial content."
  */
 @property (nonatomic, copy) NSString *managingEditorEmail;
 
 /**
  *  This property corresponds to the `webMaster` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "email address for the person responsible for technical issues relating to the channel."
  */
 @property (nonatomic, copy) NSString *webMasterEmail;
 
 /**
  *  This property corresponds to the `pubDate` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "publication date for the content in the channel."
  */
 @property (nonatomic, copy) NSDate *pubDate;
 
 /**
  *  This property corresponds to the `lastBuildDate` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is the "last time the content of the channel changed."
  *
  *  The date format is expected to be `EEE, dd MMM yyyy HH:mm:ss Z`.
@@ -108,7 +108,7 @@
 
 /**
  *  This property corresponds to the `generator` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is "a string indicating the program used to generate the channel."
  *
  *  The date format is expected to be `EEE, dd MMM yyyy HH:mm:ss Z`.
@@ -117,14 +117,14 @@
 
 /**
  *  This property corresponds to the `docs` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is "a URL that points to the documentation for the format used in the RSS file."
  */
 @property (nonatomic, copy) NSURL *docsURL;
 
 /**
  *  This property is short for "time to live" and corresponds to the `ttl` element within a `channel` element.
- *  
+ *
  *  Per the RSS 2.0 specification, it is "a number of minutes that indicates how long a channel can be cached before refreshing from the source."
  */
 @property (nonatomic, assign) NSInteger ttl;

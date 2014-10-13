@@ -30,41 +30,41 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-  if (self = [super init]) {
-    _url = [aDecoder decodeObjectForKey:@"url"];
-    _fileSize = [[aDecoder decodeObjectForKey:@"fileSize"] intValue];
-    _type = [aDecoder decodeObjectForKey:@"type"];
-    _medium = [aDecoder decodeObjectForKey:@"medium"];
-    _isDefault = [[aDecoder decodeObjectForKey:@"isDefault"] boolValue];
-    _expression = [aDecoder decodeObjectForKey:@"expression"];
-    _bitrate = [[aDecoder decodeObjectForKey:@"bitrate"] intValue];
-    _framerate = [[aDecoder decodeObjectForKey:@"framerate"] intValue];
-    _samplingRate = [[aDecoder decodeObjectForKey:@"samplingRate"] floatValue];
-    _channels = [[aDecoder decodeObjectForKey:@"channels"] intValue];
-    _duration = [[aDecoder decodeObjectForKey:@"duration"] intValue];
-    _size.height = [[aDecoder decodeObjectForKey:@"height"] floatValue];
-    _size.width = [[aDecoder decodeObjectForKey:@"width"] floatValue];
-    _language = [aDecoder decodeObjectForKey:@"language"];
-  }
-  return self;
+    if (self = [super init]) {
+        _url = [aDecoder decodeObjectForKey:@"url"];
+        _fileSize = [[aDecoder decodeObjectForKey:@"fileSize"] intValue];
+        _type = [aDecoder decodeObjectForKey:@"type"];
+        _medium = [aDecoder decodeObjectForKey:@"medium"];
+        _isDefault = [[aDecoder decodeObjectForKey:@"isDefault"] boolValue];
+        _expression = [aDecoder decodeObjectForKey:@"expression"];
+        _bitrate = [[aDecoder decodeObjectForKey:@"bitrate"] intValue];
+        _framerate = [[aDecoder decodeObjectForKey:@"framerate"] intValue];
+        _samplingRate = [[aDecoder decodeObjectForKey:@"samplingRate"] floatValue];
+        _channels = [[aDecoder decodeObjectForKey:@"channels"] intValue];
+        _duration = [[aDecoder decodeObjectForKey:@"duration"] intValue];
+        _size.height = [[aDecoder decodeObjectForKey:@"height"] floatValue];
+        _size.width = [[aDecoder decodeObjectForKey:@"width"] floatValue];
+        _language = [aDecoder decodeObjectForKey:@"language"];
+    }
+    return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-  [aCoder encodeObject:self.url forKey:@"url"];
-  [aCoder encodeObject:@(self.fileSize) forKey:@"fileSize"];
-  [aCoder encodeObject:self.type forKey:@"type"];
-  [aCoder encodeObject:self.medium forKey:@"medium"];
-  [aCoder encodeObject:@(self.isDefault) forKey:@"isDefault"];
-  [aCoder encodeObject:self.expression forKey:@"expression"];
-  [aCoder encodeObject:@(self.bitrate) forKey:@"bitrate"];
-  [aCoder encodeObject:@(self.framerate) forKey:@"framerate"];
-  [aCoder encodeObject:@(self.samplingRate) forKey:@"samplingRate"];
-  [aCoder encodeObject:@(self.channels) forKey:@"channels"];
-  [aCoder encodeObject:@(self.duration) forKey:@"duration"];
-  [aCoder encodeObject:@(self.size.height) forKey:@"height"];
-  [aCoder encodeObject:@(self.size.width) forKey:@"width"];
-  [aCoder encodeObject:self.language forKey:@"language"];
+    [aCoder encodeObject:self.url forKey:@"url"];
+    [aCoder encodeObject:@(self.fileSize) forKey:@"fileSize"];
+    [aCoder encodeObject:self.type forKey:@"type"];
+    [aCoder encodeObject:self.medium forKey:@"medium"];
+    [aCoder encodeObject:@(self.isDefault) forKey:@"isDefault"];
+    [aCoder encodeObject:self.expression forKey:@"expression"];
+    [aCoder encodeObject:@(self.bitrate) forKey:@"bitrate"];
+    [aCoder encodeObject:@(self.framerate) forKey:@"framerate"];
+    [aCoder encodeObject:@(self.samplingRate) forKey:@"samplingRate"];
+    [aCoder encodeObject:@(self.channels) forKey:@"channels"];
+    [aCoder encodeObject:@(self.duration) forKey:@"duration"];
+    [aCoder encodeObject:@(self.size.height) forKey:@"height"];
+    [aCoder encodeObject:@(self.size.width) forKey:@"width"];
+    [aCoder encodeObject:self.language forKey:@"language"];
 }
 
 @end

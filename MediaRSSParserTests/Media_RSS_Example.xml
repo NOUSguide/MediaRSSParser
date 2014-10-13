@@ -52,6 +52,9 @@
         
         <media:credit />
         <media:credit role="co-artist">Bob Artist</media:credit>
+        <unsupportedElementA>Media Item 1 Unsupported Element A 1/2</unsupportedElementA>
+        <unsupportedElementA>Media Item 1 Unsupported Element A 2/2</unsupportedElementA>
+        <unsupportedElementB>Media Item 1 Unsupported Element B 1/1</unsupportedElementB>
     </item>
     
     <item>
@@ -74,7 +77,7 @@
           height="1000"
           width="1500"/>
       </media:group>
-
+      <unsupportedElement>Media Item 2 Unsupported Element 1/1</unsupportedElement>
     </item>
   </channel>
 </rss>
