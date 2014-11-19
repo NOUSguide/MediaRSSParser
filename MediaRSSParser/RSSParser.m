@@ -30,7 +30,10 @@
 #import "AFHTTPSessionManager.h"
 
 @interface RSSParser()
+
 @property (nonatomic, strong, readwrite) NSDateFormatter *dateFormatter;
+@property (nonatomic, strong) NSMutableDictionary *unsupportedAttributes;
+
 @end
 
 @implementation RSSParser
@@ -61,6 +64,7 @@
 - (void)setUpDateFormatter
 {
     self.dateFormatter = [[NSDateFormatter alloc] init];
+    self.dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     [self.dateFormatter setDateFormat:@"EEE, dd MMM yyyy HH:mm:ss Z"];
 }
 
@@ -175,6 +179,7 @@
     self.mediaCredits = nil;
     self.mediaContents = nil;
     self.mediaThumbnails = nil;
+    self.unsupportedAttributes = nil;
     self.items = nil;
     self.tempString = nil;
 }
@@ -207,6 +212,10 @@
     } else if ([self matchesMediaCreditElement:elementName]) {
         [self addMediaCreditFromAttributes:attributeDict];
         
+    } else if (attributeDict != nil && attributeDict.count > 0) {
+        
+        self.currentItem.unsupportedAttributes = @{elementName : attributeDict};
+    
     }
     
     self.tempString = [[NSMutableString alloc] init];
@@ -219,6 +228,7 @@
     self.mediaContents = [[NSMutableArray alloc] init];
     self.mediaThumbnails = [[NSMutableArray alloc] init];
     self.mediaCredits = [[NSMutableArray alloc] init];
+    self.unsupportedAttributes = [NSMutableDictionary dictionary];
 }
 
 #pragma mark - Start Matchers

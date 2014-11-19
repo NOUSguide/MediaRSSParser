@@ -34,7 +34,7 @@
 @interface RSSParser : NSObject <NSXMLParserDelegate>
 
 /**
- *  The date formatter used for formatting dates from the RSS feed. This object is created on `init` of the `RSSParser`. If your RSS feed uses an atypical date format, you can set the correct date format on this object. The default date format is `EEE, dd MMM yyyy HH:mm:ss Z`.
+ *  The date formatter used for formatting dates from the RSS feed. This object is created on `init` of the `RSSParser`. If your RSS feed uses an atypical date format, you can set the correct date format on this object. The default date format is `EEE, dd MMM yyyy HH:mm:ss Z` with locale en_US. (RFC822)
  */
 @property (nonatomic, strong, readonly) NSDateFormatter *dateFormatter;
 

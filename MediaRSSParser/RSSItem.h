@@ -154,6 +154,8 @@
  */
 @property (nonatomic, copy) NSString *mediaText;
 
+@property (nonatomic, copy) NSDictionary *unsupportedAttributes;
+
 #pragma mark - Getting Embedded Images
 ///---------------------
 /// @name Getting Embedded Images
